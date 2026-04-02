@@ -1,13 +1,13 @@
 # 🧠 Optimized ANN Classifier: RFE & Bayesian Optimization
 
-This repository contains a complete, production-grade machine learning pipeline for building, optimizing, and evaluating an Artificial Neural Network (Multi-Layer Perceptron) using TensorFlow/Keras. 
+This repository contains a machine learning pipeline for building, optimizing, and evaluating an Artificial Neural Network (Multi-Layer Perceptron) using TensorFlow/Keras. 
 
 This project goes beyond a standard neural network implementation by focusing heavily on **dimensionality reduction** and **hyperparameter tuning**. It utilizes Recursive Feature Elimination (RFE) to strip away noisy data and Optuna (Bayesian Optimization) to dynamically discover the optimal network architecture.
 
 ## 🚀 Key Features
 
 * **Advanced Feature Selection:** Uses Scikit-Learn's `RFE` with a `RandomForestClassifier` estimator to reduce the dataset down to the top 10 most critical features, preventing the curse of dimensionality and reducing overfitting.
-* **Bayesian Hyperparameter Optimization:** Implements `Optuna` to intelligently search for the best model architecture (number of layers, neurons, learning rate) using a Tree-structured Parzen Estimator (TPE), vastly outperforming standard Grid/Random search.
+* **Bayesian Hyperparameter Optimization:** Implements `Optuna` to intelligently search for the best model architecture in a randomforestclassifier(number of trees and maximum depth of tree) using a Tree-structured Parzen Estimator (TPE), vastly outperforming standard Grid/Random search.
 * **Deep Learning Architecture:** A dynamic Multi-Layer Perceptron (MLP) built with TensorFlow/Keras, utilizing Early Stopping to prevent overfitting during training.
 * **Robust Preprocessing Pipeline:** Includes strict automated handling of missing values (`NaN` imputation/dropping) and feature standardization (`StandardScaler`) to ensure gradient descent converges smoothly.
 * **Comprehensive Evaluation:** Evaluates model performance using Accuracy alongside Confusion Matrix to account for potential class imbalances.
