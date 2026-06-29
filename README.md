@@ -36,4 +36,4 @@ pip install tensorflow scikit-learn pandas numpy matplotlib seaborn optuna
 * **Feature Reduction:** The RFE algorithm successfully isolated the top 10 most impactful features, filtering out mathematical noise and reducing dimensionality.
 * **Hyperparameter Tuning:** Optuna successfully identified the optimal learning rate and hidden layer density through Bayesian search.
 * **Performance Metrics:** The fully optimized ANN achieved a highly stable test accuracy of **~83.2%**, with detailed breakdowns available via the classification report and confusion matrix within the notebook.
-* **Graphicsl approach:**  accuracy/Loss v/s epoch for both validation and training data was plotted using matplotlib.
+* **Graphical approach:**  accuracy/Loss v/s epoch for both validation and training data was plotted using matplotlib.
